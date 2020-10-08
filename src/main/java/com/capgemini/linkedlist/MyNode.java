@@ -1,10 +1,18 @@
 package com.capgemini.linkedlist;
 
-import java.util.*;
-
-public class MyNode{
+public class MyNode<K> {
+	private K key;
+	private MyNode<K> next;
 	
-	public static void main (String args[]) {
-	System.out.println("Welcome to My First LinkedList Program ");
+	public MyNode(K key) {
+		this.key= key;
+	}
+
+	public MyNode getNext() {
+		return next;
+	}
+
+	public void setNext(MyNode next) {
+		this.next = next;
 	}
 }
